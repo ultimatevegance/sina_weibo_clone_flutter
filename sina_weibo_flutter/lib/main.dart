@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:sina_weibo_flutter/discoverPageVC.dart';
-import 'package:sina_weibo_flutter/messagePageVC.dart';
-import 'package:sina_weibo_flutter/myPageVC.dart';
-import 'package:sina_weibo_flutter/videoPageVC.dart';
-import 'homePage.dart';
+import 'package:sina_weibo_flutter/pages/discoverPageVC.dart';
+import 'package:sina_weibo_flutter/pages/messagePageVC.dart';
+import 'package:sina_weibo_flutter/pages/myPageVC.dart';
+import 'package:sina_weibo_flutter/pages/videoPageVC.dart';
+import 'pages/homePage.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,7 +24,7 @@ class IndexTab extends StatelessWidget {
     return CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         items: [
-          BottomNavigationBarItem(icon: Icon(CupertinoIcons.home),title: Text('微博')),
+          BottomNavigationBarItem(icon:  new Image.asset("assets/images/tabbar_home@3x.png",),activeIcon: new Image.asset("assets/images/tabbar_home_selected@3x.png") ,title: Text('微博')),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.video_camera),title: Text('视频')),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.search),title: Text('发现')),
           BottomNavigationBarItem(icon: Icon(CupertinoIcons.mail),title: Text('消息')),
